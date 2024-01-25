@@ -185,6 +185,11 @@ public class UIHandler : MonoBehaviour
     }
     private void Update()
     {
+        if(Input.GetKeyDown(KeyCode.Escape))
+        {
+            Application.Quit();
+        }
         Debug.Log("Your character's name is " +  nameText.text + ". Their race is " + actualRealRace + " and their class is " + actualRealClass + ". They are " + actualRealAlignment + ". Their stat points are; Hit points: " + hpText.text + ", Strength: " + strText.text + ", Dexterity: " + dexText.text + ", Constitution: " + conText.text + ", Intelligence: " + intText.text + ", Wisdom: " + wisText.text + ", Charisma: " + chaText.text + ". Your character is ready.");
     }
+
 }
